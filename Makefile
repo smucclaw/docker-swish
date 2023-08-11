@@ -17,7 +17,7 @@ all:
 	@echo "interactive      Run the image interactively"
 
 image::
-	docker build -t $(IMG) .
+	docker build --build-arg SWISH_SHA1=5edfaf1 -t $(IMG) .
 
 run:
 	docker run --detach ${DOPTS} $(IMG)

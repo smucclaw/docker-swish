@@ -26,6 +26,7 @@ COPY --from=base /swish /swish
 COPY entry.sh entry.sh
 
 ENV SWISH_DATA /data
+ENV SWISH_DAEMON_USER daemon
 VOLUME ${SWISH_DATA}
 WORKDIR ${SWISH_DATA}
 

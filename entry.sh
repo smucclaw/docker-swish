@@ -9,7 +9,7 @@ configavail=/swish/config-available
 start=--no-fork
 ssl=
 scheme=http
-udaemon=daemon
+udaemon=${SWISH_DAEMON_USER:-daemon}
 uconfig=root
 config_run=no
 
