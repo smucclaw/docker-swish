@@ -1,4 +1,4 @@
-FROM swipl:9.1.17 as base
+FROM swipl:9.1.19 as base
 
 RUN apt-get update && apt-get install -y \
     git build-essential autoconf curl unzip \
