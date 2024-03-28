@@ -2,10 +2,10 @@ FROM swipl:9.3.3 as base
 
 RUN apt-get update && apt-get install -y \
     git build-essential autoconf curl unzip \
-    cleancss node-requirejs
+    cleancss node-requirejs uglifyjs
 
 ENV SWISH_HOME /swish
-ARG SWISH_SHA1 V1.7.0
+ARG SWISH_SHA1 V2.1.0
 
 RUN echo "At version ${SWISH_SHA1}"
 RUN git clone https://github.com/SWI-Prolog/swish.git && \
